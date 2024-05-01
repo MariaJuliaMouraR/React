@@ -11,8 +11,8 @@ function Relogio() {
       let relogio = new Date();
       relogio.setTime(relogio.getTime() - 3 * 60 * 60 * 1000); // Ajuste de fuso horário, se necessário
       let horaAtual = relogio.toISOString().substring(11, 19);
-      let diaAtual = relogio.getDate();
-      let mesAtual = relogio.getMonth() + 1; // Mês começa do zero, por isso adicionamos 1
+      let diaAtual = ('0' + relogio.getDate()).slice(-2); // Formata o dia com zero à esquerda
+      let mesAtual = ('0' + (relogio.getMonth() + 1)).slice(-2); // Formata o mês com zero à esquerda
       let anoAtual = relogio.getFullYear();
 
       setHora(horaAtual);
@@ -28,11 +28,11 @@ function Relogio() {
 
   return (
     <>
-    <div>
-      <h2>RELÓGIO</h2>
-      <p>{`${dia}/${mes}/${ano}`}</p>  
-      <p>{hora}</p>
-    </div>
+      <div>
+        <h2>RELÓGIO</h2>
+        <p>{`${dia}/${mes}/${ano}`}</p>  
+        <p>{hora}</p>
+      </div>
     </>
   );
 }
