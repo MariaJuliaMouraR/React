@@ -2,7 +2,7 @@ import React from 'react';
 
 const AnimatedText = () => {
   const [text, setText] = React.useState('');
-  const originalText = 'CONHEÇA A FATEC!';
+  const originalText = '  CONHEÇA A FATEC!  ';
   const delay = 200;
 
   React.useEffect(() => {
