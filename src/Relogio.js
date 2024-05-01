@@ -29,7 +29,7 @@ function Relogio() {
   return (
     <>
     <div>
-      <h2>DATA E HORA</h2>
+      <h2>RELÓGIO</h2>
       <p>{`${dia}/${mes}/${ano}`}</p>  
       <p>{hora}</p>
     </div>
