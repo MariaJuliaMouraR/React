@@ -1,4 +1,3 @@
-import Relogio from "./Components/Relogio";
 import MinhasRotas from "./MinhasRotas";
 
 
