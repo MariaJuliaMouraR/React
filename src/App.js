@@ -1,7 +1,5 @@
 import MinhasRotas from "./MinhasRotas";
 
-
-
 function App() {
   return (
     <>
