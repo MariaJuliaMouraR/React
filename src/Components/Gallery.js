@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+
 
 <article>
     <h1>Meu primeiro componente</h1>
@@ -10,21 +10,18 @@ import ReactDOM from 'react-dom';
     </ol>
 </article>
 
-
 export function Profile(){
     return (
         <>
-        <Avatar />
+        {/* <Avatar 
+        person={{ name: 'Lin Lanying' , imageId: '1bX5QH6'}}
+        siz={100} 
+        /> */}
         <img src="https://i.imgur.com/MK3eW3Am.jpg" alt="Katherine Johnson"
         width={100}
         height={100}
         />
-        <br/> 
 
-        <img src="https://i.imgur.com/QIrZWGIs.jpg" alt="Alan L. Hart"
-        width={100}
-        height={100}
-        />
         </>
     );
 }
@@ -41,14 +38,11 @@ export default function Gallery(){
     return (
         <section>
             <h1>Cientistas incríveis</h1>
-            <Profile />
-            {/* <Profile />
-            <Profile /> */}
+            <Profile /> <Profile /> <Profile /> 
         
         </section>
     );
 }
-
 
 export function TodoList(){
     return (
@@ -69,14 +63,14 @@ export function TodoList(){
 }
 
 
-export function Avatar(){
+export function Avatar({person,size}){
     const avatar = "https://i.imgur.com/7vQD0fPs.jpg";
     const descricao = "Gregorio Y. Zara";
     const name = "Gregorio Y. Zara";
 	return(
     <>
     <img
-	className="avatar"
+	//className="avatar"
 	src="https://i.imgur.com/1bX5QH6.jpg"
 	alt= "Lin Lanying"
     width={100}
@@ -104,7 +98,6 @@ const person = {
 	}
 };
 
-
 export function TodoListTWO(){
     const avatar = "https://i.imgur.com/7vQD0fPs.jpg";
     return (
@@ -113,7 +106,7 @@ export function TodoListTWO(){
         <div style={person.theme}>
         <h1>{person.name}'s Todos</h1>
         <img
-	    className="avatar"
+	    //className="avatar"
 	    src={avatar}
         />
 		<ul>
