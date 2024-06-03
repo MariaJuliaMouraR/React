@@ -39,7 +39,7 @@ import { useState } from 'react';
 }*/
 
 
-/*export default function Gallery() {
+  export default function Gallery() {
   const [index, setIndex] = useState(0);
   const [showMore, setShowMore] = useState(false);
 
@@ -74,9 +74,9 @@ import { useState } from 'react';
       />
     </>
   );
-}*/
+}
 
-export default function Gallery() {
+/*export default function Gallery() {
     return (
       <section>
         <h1>Inspiring Sculptures</h1>
@@ -94,4 +94,4 @@ export default function Gallery() {
         alt="'Floralis Genérica' by Eduardo Catalanoa "
       />
     );
-  }
+  }*/

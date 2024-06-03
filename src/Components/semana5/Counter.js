@@ -75,7 +75,7 @@ alert(0);
 }*/
 
 
-export default function Counter() {
+/*export default function Counter() {
     const [number, setNumber] = useState(0);
 
     return (
@@ -89,5 +89,27 @@ export default function Counter() {
       }}>+3</button>
         </>
     )
+}*/
+
+export default function Counter() {
+  const [number, setNumber] = useState(0);
+
+  return (
+      <>
+      <h1>Counter</h1>
+      <h1>{number}</h1>
+    <button onClick={() => {
+      setNumber(number + 5);
+      setNumber(n => n + 1);
+      setNumber(42);
+
+    }}>Increase the number</button>
+      </>
+  )
 }
+
+
+
+
+
 
